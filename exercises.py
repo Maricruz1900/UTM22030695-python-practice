@@ -40,3 +40,43 @@ flowers["COST"] = "$190"
 
 #Variable 2 modified
 print(flowers)
+
+
+
+#Function
+print("THESE ARE THE FUNCTIONS")
+#Here the operand and the number one and two are defined
+def operation(operating, number1, number2):
+
+    #here it is indicated that if it is + it will be added
+    if operating == '+':
+        Result = number1 + number2
+    #is subtracted
+    elif operating == '-':
+        Result = number1 - number2
+    #it divides    
+    elif operating == '/':
+        Result = number1 / number2
+    #it multiplies    
+    elif operating == '*':
+        Result = number1 * number2
+    else:
+        Result = None
+    return Result
+
+##you are prompted to enter the operand you want to perform
+print("ENTER THE OPERAND + - / * ")
+operand = input()
+
+## you are prompted to enter the first number
+print("ENTER THE NUMBER1")
+number1 =int(input())
+
+## you are prompted to enter the second number
+print("ENTER THE NUMBER2")
+number2 =int(input())
+
+#here the result is printed with the 2 numbers indicated by the user and the operand
+result = operation(operand, number1, number2)
+print(result)
+
